@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="rootNode" prefHeight="679.0" prefWidth="1012.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.ItemFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00ccdd" height="93.0" layoutX="-7.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="1019.0" />
+      <Label layoutX="415.0" layoutY="24.0" text="Item Form">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="159.0" layoutY="142.0" text="Item Id :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtItemId" layoutX="159.0" layoutY="164.0" onAction="#txtItemIdOnAction" prefHeight="33.0" prefWidth="284.0" />
+      <Label layoutX="159.0" layoutY="212.0" text="Qty in stock :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQtyInStock" layoutX="159.0" layoutY="234.0" onAction="#txtQtyAddressOnAction" prefHeight="33.0" prefWidth="284.0" />
+      <Label layoutX="589.0" layoutY="142.0" text="Item Name :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtItemName" layoutX="589.0" layoutY="164.0" onAction="#txtItemNameOnAction" prefHeight="33.0" prefWidth="284.0" />
+      <Label layoutX="589.0" layoutY="212.0" text="Unit Price :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUnitPrice" layoutX="589.0" layoutY="234.0" onAction="#txtUnitPriceOnAction" prefHeight="33.0" prefWidth="284.0" />
+      <JFXButton fx:id="btnSave" layoutX="335.0" layoutY="311.0" onAction="#btnSaveOnAction" prefHeight="44.0" prefWidth="118.0" style="-fx-background-color: #00CCDD;" text="Save">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="475.0" layoutY="311.0" onAction="#btnUpdateOnAction" prefHeight="44.0" prefWidth="118.0" style="-fx-background-color: #00CCDD;" text="Update">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="615.0" layoutY="311.0" onAction="#btnDeleteOnAction" prefHeight="44.0" prefWidth="118.0" style="-fx-background-color: #00CCDD;" text="Delete">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnClear" layoutX="755.0" layoutY="311.0" onAction="#btnClearOnAction" prefHeight="44.0" prefWidth="118.0" style="-fx-background-color: #00CCDD;" text="Clear">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblItemCart" layoutX="159.0" layoutY="404.0" prefHeight="254.0" prefWidth="716.0">
+         <columns>
+            <TableColumn fx:id="colItemId" prefWidth="110.0" text="Item Id" />
+            <TableColumn fx:id="colItemName" prefWidth="213.0" text="Item Name" />
+            <TableColumn fx:id="colQty" prefWidth="215.0" text="Qty in stock" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="176.0" text="Unit_price" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

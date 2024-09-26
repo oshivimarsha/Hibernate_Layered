@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="rootNode" prefHeight="679.0" prefWidth="1012.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.DashboardFormController">
+   <children>
+      <ImageView fitHeight="587.0" fitWidth="1012.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/supermacket.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00ccdd" height="115.0" layoutX="-7.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="1019.0" />
+      <Label layoutX="342.0" layoutY="34.0" text="Dashboard Form">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnCustomer" alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="82.0" layoutY="242.0" onAction="#btnCustomerOnAction" prefHeight="232.0" prefWidth="216.0" style="-fx-background-color: #00ccdd;" text="CUSTOMER" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="115.0" fitWidth="130.0" layoutX="133.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/customer.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnItem" alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="398.0" layoutY="242.0" onAction="#btnItemOnAction" prefHeight="232.0" prefWidth="216.0" style="-fx-background-color: #00ccdd;" text="ITEM" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="115.0" fitWidth="130.0" layoutX="449.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/item.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnOrder" alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="714.0" layoutY="242.0" onAction="#btnOrderOnAction" prefHeight="232.0" prefWidth="216.0" style="-fx-background-color: #00ccdd;" text="ORDER" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="115.0" fitWidth="130.0" layoutX="765.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/order.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

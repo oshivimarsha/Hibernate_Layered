@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="679.0" prefWidth="1012.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.CustomerFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00ccdd" height="93.0" layoutX="-2.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="1019.0" />
+      <Label layoutX="355.0" layoutY="18.0" text="Customer Form">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="149.0" layoutY="132.0" text="Customer Id :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustomerId" layoutX="149.0" layoutY="154.0" onAction="#txtCustomerIdOnAction" prefHeight="33.0" prefWidth="284.0" />
+      <Label layoutX="149.0" layoutY="202.0" text="Customer Address :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustomerAddress" layoutX="149.0" layoutY="224.0" onAction="#txtCustomerAddressOnAction" prefHeight="33.0" prefWidth="284.0" />
+      <Label layoutX="579.0" layoutY="132.0" text="Customer Name :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustomerName" layoutX="579.0" layoutY="154.0" onAction="#txtCustomerNameOnAction" prefHeight="33.0" prefWidth="284.0" />
+      <Label layoutX="579.0" layoutY="202.0" text="Customer Tel :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustomerTel" layoutX="579.0" layoutY="224.0" onAction="#txtCustomerTelOnAction" prefHeight="33.0" prefWidth="284.0" />
+      <JFXButton fx:id="btnSave" layoutX="325.0" layoutY="301.0" onAction="#btnSaveOnAction" prefHeight="44.0" prefWidth="118.0" style="-fx-background-color: #00CCDD;" text="Save">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="465.0" layoutY="301.0" onAction="#btnUpdateOnAction" prefHeight="44.0" prefWidth="118.0" style="-fx-background-color: #00CCDD;" text="Update">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="605.0" layoutY="301.0" onAction="#btnDeleteOnAction" prefHeight="44.0" prefWidth="118.0" style="-fx-background-color: #00CCDD;" text="Delete">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnClear" layoutX="745.0" layoutY="301.0" onAction="#btnClearOnAction" prefHeight="44.0" prefWidth="118.0" style="-fx-background-color: #00CCDD;" text="Clear">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblCustomerCart" layoutX="149.0" layoutY="394.0" prefHeight="254.0" prefWidth="716.0">
+        <columns>
+          <TableColumn fx:id="colCustomerId" prefWidth="110.0" text="Customer_Id" />
+          <TableColumn fx:id="colCustomerName" prefWidth="213.0" text="Customer_Name" />
+            <TableColumn fx:id="colCustomerAddress" prefWidth="215.0" text="Customer_Address" />
+            <TableColumn fx:id="colCustomerTel" prefWidth="176.0" text="Customer_Tel" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
