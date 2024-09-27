@@ -99,10 +99,10 @@ public class ItemFormController {
     public void btnSaveOnAction(ActionEvent actionEvent) {
         String id = txtItemId.getText();
         String itemName = txtItemName.getText();
-        String qty = txtQtyInStock.getText();
+        String qtyInStock = txtQtyInStock.getText();
         String unitPrice = txtUnitPrice.getText();
 
-        ItemDTO itemDTO = new ItemDTO(id, itemName, qty, unitPrice);
+        ItemDTO itemDTO = new ItemDTO(id, itemName, qtyInStock, unitPrice);
 
         try {
             boolean isSaved = itemBO.saveItem(itemDTO);//CustomerRepo.save(customer);
@@ -119,14 +119,14 @@ public class ItemFormController {
     public void btnUpdateOnAction(ActionEvent actionEvent) {
         String id = txtItemId.getText();
         String itemName = txtItemName.getText();
-        String qty = txtQtyInStock.getText();
+        String qtyInStock = txtQtyInStock.getText();
         String unitPrice = txtUnitPrice.getText();
 
-        ItemDTO item = new ItemDTO(id, itemName, qty, unitPrice);
+        ItemDTO item = new ItemDTO(id, itemName, qtyInStock, unitPrice);
 
         boolean isUpdated = false;
         try {
-            isUpdated = itemBO.updateItem(item);//CustomerRepo.update(customer);
+            isUpdated = itemBO.updateItem(item);
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         } catch (SQLException e) {
